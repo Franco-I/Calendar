@@ -7,7 +7,7 @@ Funciona como un **contrato entre backend y frontend**, es decir, acuerda:
 - Qué datos se reciben de vuelta.
 - Qué errores pueden ocurrir.
 
-De esta forma, el frontend puede avanzar aunque el backend cambie por dentro.
+De esta forma, el frontend puede avanzar aunque el backend cambie por dentro, asi que OJO...
 
 ---
 
@@ -26,6 +26,8 @@ De esta forma, el frontend puede avanzar aunque el backend cambie por dentro.
 ### Descripción
 Devuelve la lista completa de actividades registradas, junto con información del usuario que las creó.
 
+ej:
+
 ### Respuesta exitosa (200)
 
 [
@@ -41,6 +43,7 @@ Devuelve la lista completa de actividades registradas, junto con información de
     "user_email": "franco@test.com"
   }
 ]
+
 2. Obtener una actividad por ID
 Endpoint
 GET /api/activities/:id
@@ -148,5 +151,5 @@ Error (404)
 
 Todas las fechas están en formato ISO (YYYY-MM-DDTHH:mm:ss.sssZ).
 Los estados válidos para status son: "pending", "in_progress", "completed".
-En caso de error inesperado, la API devuelve un código 500 con un mensaje genérico.
+En caso de error inesperado, la API devuelve un código 500 con un mensaje genérico. quizas esto lo cambie para dar el mensaje especifico y no generico :3
 
