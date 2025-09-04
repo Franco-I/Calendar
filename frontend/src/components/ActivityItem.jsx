@@ -1,0 +1,1 @@
+//Cada actividad individual

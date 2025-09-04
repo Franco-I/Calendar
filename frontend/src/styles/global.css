@@ -1,0 +1,146 @@
+/* src/styles/global.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Estilos generales de botones */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Estilos de inputs */
+input, select, textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  min-width: 320px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.btn-close {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Status colors */
+.status-pending {
+  color: #856404;
+  font-weight: bold;
+}
+.status-completed {
+  color: #155724;
+  font-weight: bold;
+}
+
+/* Calendario */
+.calendar {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.calendar-day {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 180px;
+  background-color: #f9f9f9;
+}
+
+.no-activities {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Actividades */
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-item {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.activity-item.pending {
+  background-color: #fff3cd;
+}
+
+.activity-item.completed {
+  background-color: #d4edda;
+}
+
+.activity-title {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btn-toggle-status {
+  padding: 3px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #17a2b8;
+  color: #fff;
+  font-size: 12px;
+}
