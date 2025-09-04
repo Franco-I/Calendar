@@ -247,9 +247,9 @@ Agregar un formulario para crear nuevas actividades directamente en el día corr
 
 1️⃣ Flujo de comunicación entre frontend y backend
 
-Cuando el frontend necesita datos (por ejemplo, las actividades), no accede directamente a la base de datos. Todo pasa por tu API.
+Cuando el frontend necesita datos (por ejemplo, las actividades), no accede directamente a la base de datos. Todo pasa por el API.
 
-En tu ejemplo:
+ejemplo:
 
 export const getAllActivities = async () => {
   const res = await fetch(BASE_URL);
@@ -282,7 +282,13 @@ Controlador → recibe los resultados y devuelve JSON.
 
 Frontend → recibe el JSON y lo guarda en state (ej: setActivities(data)).
 
-Entonces no necesitas ninguna "variable mágica" que apunte al backend. Lo único que necesitas es la URL correcta de tu endpoint y hacer fetch.
+
+
+continuar con el desarrollo, futuros cambios 04/09/2025.  
+-agregar notificaciones
+-agregar apatado de tiempo/duracion de las actividades(tipo dividir el dia en bloques y ahi agregar las actividades y que la duracion sea la que uno le asigne y que luego uno realize esa actividad en el tiempo que corresponde para luego confirmarlo dentro de del mismo calendario y asi que se cambie el estado realizado, cuando este en curso el estado debe estar en ¨realizando o actividad en curso¨, y obvio esto antes de que cuando llegue el momento de la hora de realizar dicha actividad se confirme antes y primero que se realizara la actividad correspondiente como una maquina de marcar la hora) eso, .... suerte!
+
+recordar, 2 futuras funciones, mencionadas arriba. god
 
 
 
