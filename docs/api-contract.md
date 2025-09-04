@@ -1,3 +1,25 @@
+# Flujo de trabajo en git la rama main
+
+primero realizar la clonacion:
+luego de haber instalado github, necesitas abrir la consola git bash de visual studio code y ahi en esa consola realizar todos los pasos que se ven a continuacion)
+
+-para clonar: 
+git remote add origin https://github.com/Franco-I/Calendar.git
+
+-luego seguir orden de flujo para subir los cambios con cambio de versiones:
+
+1.  git add .
+
+2.  git commit -m ""  (dentro de las comillas dobles escribir el nombre del cambio tipo comentario)
+
+3. git push
+
+OJO si pide sincronizar la ruta para hacer los push, solo copiar y pegar el comando en consola(consola git bash)
+
+en mi caso era: git push --set-upstream origin main
+
+
+
 # API Contract - Sistema de Gestión de Actividades
 
 Este documento define los endpoints de la API.  
