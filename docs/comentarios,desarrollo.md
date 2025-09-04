@@ -1,15 +1,36 @@
+# Flujo de trabajo en git la rama main
+
+primero realizar la clonacion:
+luego de haber instalado github, necesitas abrir la consola git bash de visual studio code y ahi en esa consola realizar todos los pasos que se ven a continuacion)
+
+-para clonar: 
+git remote add origin https://github.com/Franco-I/Calendar.git
+
+-luego seguir orden de flujo para subir los cambios con cambio de versiones:
+
+1.  git add .
+
+2.  git commit -m ""  (dentro de las comillas dobles escribir el nombre del cambio tipo comentario)
+
+3. git push
+
+OJO si pide sincronizar la ruta para hacer los push, solo copiar y pegar el comando en consola(consola git bash)
+
+en mi caso era: git push --set-upstream origin main
+
+
+
 desarrollo el backend primero pensando y teniendo claro lo que hare de un principio, genero la conexion de la bd, hago una prueba en el index.js
 del backend y cuando se que esta eso funcionando correctamente luego genero la estructura genera de todo proyecto, o sea en el backend carpetas:
 src(dentro de esta, config, controllers, models, routes, utils) el archivo index.js y .env que es donde se almacena las variables que seran usadas
 por ejemplo para la conexion de la bd al backend.  (no olvidar generar las tablas correspondientes de un principio para el uso de lo primero a 
 desarrollar, tablas en la bd)
 
-1, una vez teniendo todo esto, genero lo que es el modelo de lo que necesito por ejemplo para lo primero que tiene una appweb, usuarios. genero
+1. una vez teniendo todo esto, genero lo que es el modelo de lo que necesito por ejemplo para lo primero que tiene una appweb, usuarios. genero
 un modelo de este, ejemplo: usuarioModel.js y en este archivo genero todas las funciones que dicho modelo tendra como por ejemplo listar los 
 los usuarios, crear usuarios, eliminar usuarios, actualizar usuarios, etc. 
 
-2, teniendo los modelos listos que son todas las funciones que habran respecto a los datos o tablas de la bd. se debe crear lo que son los
-controlladores, que los controladores son la logica que debe seguir cada funcion que creamos en los modelos. por ejemplo, 
+2. teniendo los modelos listos que son todas las funciones que habran respecto a los datos o tablas de la bd. se debe crear lo que son los controlladores, que los controladores son la logica que debe seguir cada funcion que creamos en los modelos. por ejemplo, 
 
 export const listarTodosUsuarios = async (req, res) => {
   try {
