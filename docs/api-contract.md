@@ -14,6 +14,8 @@ git remote add origin https://github.com/Franco-I/Calendar.git
 
 3. git push
 
+
+
 OJO si pide sincronizar la ruta para hacer los push, solo copiar y pegar el comando en consola(consola git bash)
 
 en mi caso era: git push --set-upstream origin main
